@@ -6,7 +6,7 @@ export default class Card extends React.Component {
     let card = this.props.card
     return (
       <View style={styles.card}>
-        <Image style={styles.image} source={{ url: card.image }} />
+        <Image style={styles.image} source={card.image} />
         <Text style={styles.text}>{card.firstName}</Text>
       </View>
     );
@@ -35,15 +35,10 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 5,
+    alignSelf: 'stretch',
+    width: '100%',
+    borderWidth:1,
     borderRadius: 7,
-    // borderWidth:1,
-    // borderColor: 'green'
+    borderColor: 'green'
   },
-  // testBox: {
-  //   flex: 1,
-  //   borderColor: 'red',
-  //   borderWidth: 2,
-  //   backgroundColor: 'red',
-  //   borderRadius: 10
-  // }
 });
