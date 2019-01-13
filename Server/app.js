@@ -1,11 +1,11 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 const mongoose = require('mongoose');
 
-var swipesRouter = require('./routes/swipes_route');
-var usersRouter = require('./routes/users');
+const swipesRouter = require('./routes/swipes_route');
+const usersRouter = require('./routes/users');
 
 const { DBURL } = process.env;
 mongoose.Promise = Promise;
@@ -17,7 +17,7 @@ mongoose
     console.error('Error connecting to mongo', err)
   });
 
-var app = express();
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
