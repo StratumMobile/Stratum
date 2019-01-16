@@ -17,7 +17,6 @@ export default class DeckSwiper extends React.Component {
   }
 
   render () {
-    console.log(height)
     return (
     <View style={styles.container}>
         <Swiper
@@ -33,7 +32,16 @@ export default class DeckSwiper extends React.Component {
             backgroundColor={'#0e0e0e'}
             disableBottomSwipe={true}
             disableTopSwipe={true}
-            stackSize= {3}>
+            stackSize= {3}
+            cardStyle={{
+              top: 5,
+              left: 5,
+              bottom: 5,
+              right: 5,
+              width: 'auto',
+              height: 'auto'
+            }}
+            >
         </Swiper>
     </View>
     )
