@@ -17,7 +17,6 @@ export default class DeckSwiper extends React.Component {
   }
 
   render () {
-    console.log(height)
     return (
     <View style={styles.container}>
         <Swiper
