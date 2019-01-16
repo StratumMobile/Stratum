@@ -14,6 +14,7 @@ export default class Card extends React.Component {
 const styles = StyleSheet.create({
   nav: {
     marginTop: 20,
+    height: 40,
     backgroundColor: '#0e0e0e',
     borderColor: 'green',
     borderWidth: 2,
