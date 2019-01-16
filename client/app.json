@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Stratum2",
+    "name": "Stratum",
     "slug": "Stratum2",
     "privacy": "public",
     "sdkVersion": "31.0.0",
@@ -24,6 +24,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": ""
   }
 }
