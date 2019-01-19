@@ -5,15 +5,14 @@ const logger = require('morgan');
 const mongoose = require('mongoose');
 
 const swipesRouter = require('./routes/swipes_route');
-const usersRouter = require('./routes/users');
+const usersRouter = require('./routes/users_route');
 
-const { DBURL } = process.env;
-mongoose.Promise = Promise;
 mongoose
-  .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
-  .then(() => {
-    console.log(`Connected to Mongo on ${DBURL}`)
-  }).catch(err => {
+  .connect('mongodb://localhost/Stratum', { useNewUrlParser: true })
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+  })
+  .catch(err => {
     console.error('Error connecting to mongo', err)
   });
 
