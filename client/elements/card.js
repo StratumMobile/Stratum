@@ -7,7 +7,7 @@ export default class Card extends React.Component {
     return (
       <View style={styles.card}>
         <Image style={styles.image} source={card.image} />
-        <Text style={styles.text}>{card.firstName}</Text>
+        <Text style={styles.text}>{card.first_name}</Text>
       </View>
     );
   }

@@ -24,6 +24,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use('/swipes/:id', swipesRouter);
-app.use('/user/:id', usersRouter);
+app.use('/user', usersRouter);
 
 module.exports = app;

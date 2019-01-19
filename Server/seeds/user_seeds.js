@@ -3,7 +3,7 @@ const User = require("../models/User");
 const seeds_json = require("./simple_seed.json")
 
 mongoose
-  .connect('mongodb://localhost/Strutum', {useNewUrlParser: true})
+  .connect('mongodb://localhost/Stratum', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
