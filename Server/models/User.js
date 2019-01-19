@@ -2,12 +2,16 @@ const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
 const userSchema = new Schema({
-  username: String,
-  stratum: Number,
-  {
-  timestamps: {
-    createdAt: 'created_at',
-    updatedAt: 'updated_at'
+  first_name: String,
+  last_name: String,
+  gender: String,
+  email: String,
+  phone: String,
+  pictures: Array,
+  stratum: {
+    yays: Number,
+    nays: Number,
+    score: Number
   }
 });
 
