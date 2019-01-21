@@ -1,7 +1,10 @@
 import React from 'react';
 import Swiper from 'react-native-deck-swiper';
 import { View, Text, StyleSheet, Image, Dimensions } from 'react-native';
+// import LOCALIP from 'react-native-dotenv'
 import Card from '../elements/card';
+
+// ApiClient.init(API_KEY)
 
 const styles = StyleSheet.create({
   container: {
@@ -56,13 +59,12 @@ export default class DeckSwiper extends React.Component {
   }
 
   componentDidMount() {
-    return fetch('http://192.168.1.37:3000/user/all_users')
+    return fetch(`http://192.168.1.37:3000/user/all_users`)
     .then((response) => response.json())
     .then((responseJson) => {
       this.setState({
         cards: responseJson
-      })
-      console.log('THIS IS THE STATE', this.state.cards)
+      });
     })
     .catch((error) =>{
       console.error(error);

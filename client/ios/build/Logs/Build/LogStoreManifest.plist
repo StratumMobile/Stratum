@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>F3D86205-84EE-48E0-A94A-AE5F86621CEF</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F3D86205-84EE-48E0-A94A-AE5F86621CEF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>stratum project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>stratum</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace stratum with scheme stratum and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>569768373.42158699</real>
+			<key>timeStoppedRecording</key>
+			<real>569768374.63582206</real>
+			<key>title</key>
+			<string>Building workspace stratum with scheme stratum and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>F3D86205-84EE-48E0-A94A-AE5F86621CEF</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
